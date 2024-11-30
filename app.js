@@ -62,23 +62,4 @@ choices.forEach((choice) => {
         const userChoice = choice.getAttribute("id");
 playGame(userChoice);
     });
-});//hehehhhhhhhhhhhhhhhhhhh
-const userScoreElement = document.getElementById('user-score');
-const compScoreElement = document.getElementById('comp-score');
-const messageElement = document.getElementById('msg');
-
- let userScore1 = 0;
- let compScore1 = 0;
-
-function updateScores() {
-    userScoreElement.textContent = userScore1;
-    compScoreElement.textContent = compScore1;
-    messageElement.textContent = "Play your move";
-}
-function resetGame() {
-    userScore1 = 0;
-    compScore1 = 0;
-    updateScores();
-}
-document.getElementById('reset').addEventListener('click', resetGame);
-updateScores();
+});
